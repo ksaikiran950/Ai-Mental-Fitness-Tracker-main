@@ -1,7 +1,4 @@
 # Ai-Mental-Fitness-Tracker
-The "Mental Fitness Tracker" project, developed by IBM in collaboration with AICTE, IBMSkills, and Edunet, is an artificial intelligence-based solution aimed at monitoring and improving mental well-being. This innovative system leverages AI technologies to track and analyze user behavior, emotions, and mental health indicators.
-Project Description: AI Mental Fitness Tracker
-
 The AI Mental Fitness Tracker is a project developed using Jupyter Notebook that aims to analyze and predict mental fitness scores based on various factors. It utilizes machine learning algorithms to train regression models and make predictions. The project involves importing necessary libraries, performing data preprocessing, model training, and evaluating the models' performance.
 
 Importing Libraries:
