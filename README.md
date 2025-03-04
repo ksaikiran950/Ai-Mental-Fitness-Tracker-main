@@ -1,45 +1,70 @@
-# Ai-Mental-Fitness-Tracker
-The AI Mental Fitness Tracker is a project developed using Jupyter Notebook that aims to analyze and predict mental fitness scores based on various factors. It utilizes machine learning algorithms to train regression models and make predictions. The project involves importing necessary libraries, performing data preprocessing, model training, and evaluating the models' performance.
+# 📊 AI Mental Fitness Tracker
 
-Importing Libraries:
-The project starts by importing the required libraries, including pandas, numpy, matplotlib.pyplot, seaborn, and various machine learning libraries such as scikit-learn (for regression algorithms), xgboost, and others.
+## 🚀 Project Overview
+The **AI Mental Fitness Tracker** is a machine learning project designed to analyze and predict mental fitness scores based on various factors. It utilizes multiple regression models to gain insights into mental health trends and provide accurate predictions.
 
-Data Preprocessing:
-Before training the regression models, the data needs to be preprocessed. This may include handling missing values, encoding categorical variables, scaling features, or any other necessary data transformations. The specific preprocessing steps may vary based on the dataset used for the project.
+## 📌 Features
+- **Data Preprocessing:** Cleans and prepares mental health datasets for analysis.
+- **Machine Learning Models:** Implements multiple regression models (Linear Regression, Random Forest, XGBoost, etc.).
+- **Performance Evaluation:** Uses Mean Squared Error (MSE) and R-Squared (R²) score.
+- **Data Visualization:** Provides correlation heatmaps, actual vs. predicted plots, feature importance charts, and residual analysis.
+- **Scalable & Extendable:** Can be improved with deep learning models and real-time data integration.
 
-Model Training and Evaluation:
-After preprocessing the data, the project proceeds with splitting the dataset into training and testing sets using the train_test_split function from scikit-learn. Then, it trains several regression models on the training data, such as Ridge, Lasso, ElasticNet, Linear Regression, BayesianRidge, SVR, DecisionTreeRegressor, RandomForestRegressor, GradientBoostingRegressor, XGBRegressor, KNeighborsRegressor, and MLPRegressor.
+## 📂 Dataset
+- `mental-and-substance-use-as-share-of-disease.csv`
+- `prevalence-by-mental-and-substance-use-disorder.csv`
 
-Once the models are trained, they are evaluated using various metrics such as mean squared error (MSE) and coefficient of determination (R-squared) using the mean_squared_error and r2_score functions from scikit-learn. These metrics provide insights into the models' accuracy and performance in predicting mental fitness scores.
+These datasets contain mental health and substance use prevalence data, which are used to train the models.
 
-Visualization:
-The project may include visualizations using matplotlib.pyplot and seaborn libraries to display the data distribution, model predictions, feature importance, or any other relevant visualizations to aid in understanding the results.
+## 🛠️ Installation & Setup
+### Prerequisites
+Ensure you have **Python 3.x** installed along with the required libraries.
 
-Here is a short description of each regression model:
+### Step 1: Clone the Repository
+```bash
+git clone https://github.com/yourusername/AI-Mental-Fitness-Tracker.git
+cd AI-Mental-Fitness-Tracker
+```
 
-1. Ridge Regression: A linear regression model that uses L2 regularization to prevent overfitting by adding a penalty term to the loss function based on the squared magnitude of the coefficients.
+### Step 2: Install Dependencies
+```bash
+pip install -r requirements.txt
+```
 
-2. Lasso Regression: Similar to Ridge Regression, but uses L1 regularization to encourage sparsity in the coefficient values, effectively selecting the most important features and reducing the impact of less relevant ones.
+### Step 3: Run Jupyter Notebook
+```bash
+jupyter notebook
+```
+Open `Mental_Fitness_Tracker_Visualization.ipynb` and execute the cells.
 
-3. Elastic Net Regression: A combination of Ridge and Lasso Regression, using both L1 and L2 regularization. It can handle multicollinearity and select relevant features while still maintaining the benefits of Ridge and Lasso.
+## 📊 Visualizations
+The project includes:
+- **Heatmap:** To visualize feature correlations.
+- **Histograms:** For understanding data distribution.
+- **Actual vs. Predicted Plot:** To analyze model accuracy.
+- **Residual Plot:** To check error distribution.
+- **Feature Importance Chart:** To identify key influencing factors.
 
-4. Polynomial Regression: Extends linear regression by introducing polynomial terms (e.g., squared, cubed) to capture non-linear relationships between the features and the target variable.
+## 🏆 Model Performance
+The trained models are evaluated using:
+- **Mean Squared Error (MSE)**
+- **R-Squared Score (R²)**
+- Comparison of different regression models
 
-5. Decision Tree Regression: A non-linear regression model that uses a tree-like structure to split the data based on feature conditions and predict continuous values at the leaf nodes.
+## 🚀 Future Enhancements
+- Deploy as a web app using **Flask, FastAPI, or Streamlit**.
+- Improve accuracy with deep learning models.
+- Integrate real-time data for better insights.
 
-6. Random Forest Regression: An ensemble model consisting of multiple decision trees, where predictions are made by averaging the predictions of individual trees. It improves robustness and reduces overfitting compared to a single decision tree.
+## 🤝 Contribution
+Contributions are welcome! Feel free to open issues and submit pull requests.
 
-7. SVR (Support Vector Regression): Utilizes support vector machines to perform regression. It finds a hyperplane that maximizes the margin around the predicted values, allowing for non-linear regression using kernel functions.
+## 📜 License
+This project is licensed under the **MIT License**.
 
-8. XGBoost Regression: An optimized implementation of gradient boosting that uses a combination of weak prediction models (decision trees) and gradient descent optimization to make accurate predictions.
+## 📧 Contact
+For any questions or suggestions, reach out at **your-email@example.com**.
 
-9. K-Nearest Neighbors Regression: Predicts the value of a data point by averaging the values of its k-nearest neighbors, where "k" is a user-defined parameter.
+---
+💡 *Star ⭐ this repository if you find it useful!* 🚀
 
-10. Bayesian Regression: Applies Bayesian statistical techniques to regression modeling, incorporating prior knowledge about the data into the model.
-
-11. Neural Network Regression: Utilizes artificial neural networks to learn complex patterns and relationships in the data. It consists of multiple layers of interconnected nodes (neurons) that can capture non-linearities in the data.
-
-12. Gradient Boosting Regression: Similar to XGBoost, it uses an ensemble of weak prediction models, typically decision trees, to iteratively minimize the loss function by adding new models that correct the errors made by previous models.
-
-These regression models offer different approaches to predict continuous values, and their suitability depends on the specific dataset and problem at hand.
-Overall, the AI Mental Fitness Tracker project leverages machine learning algorithms to analyze and predict mental fitness scores. It aims to provide insights and predictions that can be valuable for mental health professionals, researchers, or individuals interested in monitoring and improving their mental well-being.
